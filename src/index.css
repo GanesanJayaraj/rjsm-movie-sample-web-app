@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Global styles go in base */
+@layer base {
+  body {
+    background-image: url('/BG.svg'); /* Use '/' if BG.svg is in public folder */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .custom-gradient {
+    background: linear-gradient(to right, #deddff, #95a6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .custom-card {
+    /* height: 500px; */
+    
+  }
+  .custom-bg-grad {
+    background: linear-gradient(to bottom, #0e0d23, #0d1536);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+  }
+}
